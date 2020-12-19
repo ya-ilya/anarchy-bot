@@ -8,7 +8,7 @@
 ## Commands
 - All commands can be found [here](ya-ilya.github.io/anarchybot/info)
 ## Usage
-1. Download the [bot]() and [node.js](https://nodejs.org/)
+1. Download the [bot](https://github.com/ya-ilya/anarchy-bot/archive/master.zip) and [node.js](https://nodejs.org/)
 2. Open the terminal in the folder with the bot and enter `npm install`
 3. After that, fill config.json
 ```json
