@@ -1,0 +1,9 @@
+{
+    "offline":{
+        "name":"name"
+    },
+    "online":{
+        "email":"example@email.com",
+        "password":"password"
+    }
+}
