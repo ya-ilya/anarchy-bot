@@ -69,6 +69,11 @@ bot.on("message", async message => {
       let jm = db.get(`user.jm`).value()
       bot.chat(`> ${user} ${jm}`)
     }
+    if (db.get(`user.jd`).value() != null) {}
+    else {
+      let todayDate = new Date();
+      db.set(`user.jd`, `${todayDate.getUTCDate()}.${todayDate.getUTCMonth() + 1}.${todayDate.getUTCFullYear()} ${todayDate.getUTCHours()}h ${todayDate.getUTCMinutes()}m ${todayDate.getUTCSeconds()}s UTC`).write()
+    }
   }
   else if (chat.includes("left the game") && !(chat.startsWith(`<`))) {
     color = 0xff1a1a //RED
@@ -101,7 +106,7 @@ bot.on('chat', (username, message) => {
   let array = message.split(' ');
   let args = array.slice(1)
   if (username === bot.username) return
-  let user = args[1] || username;
+  let user = args[0] || username;
   if (message.startsWith('!tps')) {
     bot.chat(`> Current tps: ${bot.getTps()}.`)
   }else if (message.startsWith(`!help`)) {
@@ -264,6 +269,10 @@ bot.on('chat', (username, message) => {
     let content = args.join(" ")
     db.set(`user.lm`, `${content}`).write()
     bot.chat(`> Now ${username} has a new leave message - ${content}`)
+  }else if (message.startsWith(`!jd`) || message.startsWith(`!joindate`)) {
+    if (!db.get(`user.jd`).value() != null) {
+      bot.chat(`> ${username} join date: ${db.get(`user.jd`).value()}`)
+    }
   }
   if (fs.existsSync(`./data/${username}.json`)) {
     db.set('user.lastwords', `${message}`).write()
