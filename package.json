@@ -1,6 +1,6 @@
 {
   "name": "anarchy-bot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Anarchy Bot",
   "main": "index.js",
   "scripts": {
@@ -11,16 +11,17 @@
     "url": "git+https://github.com/ya-ilya/anarchy-bot.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/ya-ilya/anarchy-bot/issues"
   },
   "homepage": "https://github.com/ya-ilya/anarchy-bot#readme",
   "dependencies": {
-    "discord.js": "^12.4.1",
-    "lowdb": "^1.0.0",
-    "mineflayer": "^2.37.1",
-    "mineflayer-tps": "^1.0.1",
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord-api-types": "^0.36.1",
+    "discord.js": "^13.8.1",
+    "mineflayer": "^4.3.0",
     "node-fetch": "^2.6.1"
   }
 }
