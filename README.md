@@ -1,5 +1,6 @@
 # Anarchy Bot
 
+### Before using, please read the [LICENSE](https://github.com/ya-ilya/anarchy-bot/blob/master/LICENSE)
 
 ## Info
 - The bot has quite a lot of commands
