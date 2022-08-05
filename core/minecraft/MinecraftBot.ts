@@ -69,9 +69,9 @@ export class MinecraftBot {
 
             const controlStates: ControlState[] = ["forward", "back", "left", "right"]
             const messages = [
-                "This bot has a dupe command! Enter ${config.minecraft.prefix}dupe <item name> to dupe any item :)",
-                "I remind you, there are rules on this server - ${config.minecraft.prefix}rules",
-                "Do you need a kit? enter the command ${config.minecraft.prefix}kit <kit name> to get it",
+                `This bot has a dupe command! Enter ${config.minecraft.prefix}dupe <item name> to dupe any item :)`,
+                `I remind you, there are rules on this server - ${config.minecraft.prefix}rules`,
+                `Do you need a kit? enter the command ${config.minecraft.prefix}kit <kit name> to get it`,
                 // ...
             ]
 
